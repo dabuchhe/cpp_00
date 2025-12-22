@@ -9,20 +9,11 @@ class PhoneBook
         PhoneBook();
         ~PhoneBook();
         void    displayContact();
+        void    displayTruncate(std::string sub);
         void    addContact();
-
+        int     getContactNumber();
     private:
         Contact contact[8];
 } ;
-
-// void    PhoneBook::displayContact()
-// {
-//     std::string input;
-//     std::cin >> input;
-//     for (int i = 0; i < 8; i++)
-//     {
-//         if ([i].id == input)
-//     }
-// }
 
 #endif

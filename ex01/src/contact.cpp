@@ -1,6 +1,6 @@
 #include "contact.hpp"
 
-Contact::Contact()
+Contact::Contact(): id(-1)
 {
     // std::cerr << "Contacts constructor is called" << std::endl;
 }
