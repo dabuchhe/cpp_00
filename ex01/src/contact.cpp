@@ -1,59 +1,55 @@
 #include "contact.hpp"
 
-Contact::Contact(): id(-1)
-{
-    // std::cerr << "Contacts constructor is called" << std::endl;
+Contact::Contact(): id(-1) {
 }
 
-Contact::~Contact()
-{
-    // std::cerr << "Contacts destructor is called" << std::endl;
+Contact::~Contact() {
 }
 
-int Contact::getId(){
+int Contact::getId() {
     return (this->id);
 }
 
-std::string Contact::getFirstName(){
+std::string Contact::getFirstName() {
     return (this->firstName);
 }
 
-std::string Contact::getLastName(){
+std::string Contact::getLastName() {
     return (this->lastName);
 }
 
-std::string Contact::getNickName(){
+std::string Contact::getNickName() {
     return (this->nickName);
 }
 
-std::string Contact::getPhoneNumber(){
+std::string Contact::getPhoneNumber() {
     return (this->phoneNumber);
 }
 
-std::string Contact::getDarkestSecret(){
+std::string Contact::getDarkestSecret() {
     return (this->darkestSecret);
 }
 
-void    Contact::setId(int &newId){
+void    Contact::setId(int &newId) {
     this->id = newId;
 }
 
-void    Contact::setFirstName(std::string &newFirstName){
+void    Contact::setFirstName(std::string &newFirstName) {
     this->firstName = newFirstName;
 }
 
-void    Contact::setLastName(std::string &newLastName){
+void    Contact::setLastName(std::string &newLastName) {
     this->lastName = newLastName;
 }
 
-void    Contact::setNickName(std::string &newNickName){
+void    Contact::setNickName(std::string &newNickName) {
     this->nickName = newNickName;
 }
 
-void    Contact::setPhoneNumber(std::string &newPhoneNumber){
+void    Contact::setPhoneNumber(std::string &newPhoneNumber) {
     this->phoneNumber = newPhoneNumber;
 }
 
-void    Contact::setDarkestSecret(std::string &newDarkestSecret){
+void    Contact::setDarkestSecret(std::string &newDarkestSecret) {
     this->darkestSecret = newDarkestSecret;
 }
