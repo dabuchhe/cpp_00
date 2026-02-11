@@ -6,7 +6,7 @@
 /*   By: dabuchhe <dabuchhe@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 21:25:04 by dabuchhe          #+#    #+#             */
-/*   Updated: 2026/02/04 21:48:22 by dabuchhe         ###   ########lyon.fr   */
+/*   Updated: 2026/02/11 19:21:49 by dabuchhe         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,8 +138,8 @@ void PhoneBook::displayContact() {
 		std::cerr << "Invalid id: please enter a number between 0 and " << contactMax - 1 << std::endl;
 		return ;
 	}
-	std::cout << PhoneBook::contact[id].getId() << std::endl;
-	std::cout << PhoneBook::contact[id].getFirstName() << std::endl;
-	std::cout << PhoneBook::contact[id].getLastName() << std::endl;
-	std::cout << PhoneBook::contact[id].getNickName() << std::endl;
+	std::cout << "ID :\t" << PhoneBook::contact[id].getId() << std::endl;
+	std::cout << "First name :\t" << PhoneBook::contact[id].getFirstName() << std::endl;
+	std::cout << "Last name :\t" << PhoneBook::contact[id].getLastName() << std::endl;
+	std::cout << "Nickname :\t" << PhoneBook::contact[id].getNickName() << std::endl;
 }
